@@ -1,0 +1,21 @@
+@import "../../styles/mixins.scss";
+
+.layout {
+  padding-left: 0;
+
+  height: 100%;
+
+  @include flex-column;
+
+  &.nav-open {
+    padding-left: 75px;
+  }
+
+  transition: padding-left var(--transition-time);
+}
+
+.main {
+  flex: 1;
+
+  @include flex-column;
+}

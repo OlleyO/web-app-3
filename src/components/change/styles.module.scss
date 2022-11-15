@@ -1,0 +1,34 @@
+.change {
+  display: flex;
+
+  gap: 5px;
+
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--primary-text-color);
+}
+
+.rise {
+  .triangle {
+    fill: var(--purple);
+    align-self: flex-end;
+  }
+}
+
+.fall {
+  .triangle {
+    fill: var(--red);
+    transform: rotate(180deg);
+  }
+}
+
+.rise,
+.fall {
+  display: flex;
+  gap: 3px;
+
+  div {
+    margin-bottom: -2px;
+    margin-top: -1px;
+  }
+}

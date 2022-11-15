@@ -1,0 +1,34 @@
+@import "../../styles/typography.scss";
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+.revenueCard {
+  padding: 32px;
+
+  align-items: center;
+
+  gap: 31px;
+
+  @include card-basic;
+}
+
+.progress {
+  flex: 1;
+  width: 128px;
+  transform: rotate(180deg);
+}
+
+.revenueCard__title {
+  @extend .subtitle1;
+}
+
+.value {
+  transform: rotate(180deg);
+
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  margin-left: 5px;
+
+  @include gradient-text($secondary-text-gradient);
+}

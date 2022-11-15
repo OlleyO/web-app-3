@@ -1,0 +1,36 @@
+.icon-link {
+  font-size: 10px;
+  color: #fff;
+
+  position: relative;
+
+  a {
+    font-size: 10px;
+    color: inherit;
+
+    transition: color 0.3s;
+
+    text-decoration: none;
+
+    &:hover {
+      color: var(--blue);
+    }
+  }
+}
+
+.active-marker {
+  display: none;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: var(--primary-gradient-vertical);
+
+  top: calc(50% - 5px);
+  right: -5px;
+
+  transform: rotate(45deg);
+
+  &.active {
+    display: block;
+  }
+}

@@ -1,0 +1,66 @@
+@import "../../styles/typography.scss";
+@import "../../styles/mixins.scss";
+
+$local-gap: 17px;
+
+.feedCard {
+  justify-content: space-between;
+
+  padding: 32px;
+
+  @include card-basic;
+
+  &__person {
+    display: flex;
+
+    gap: 20px;
+
+    &__avatar {
+      flex-direction: column;
+
+      @include flex-align-center;
+
+      gap: 10px;
+    }
+  }
+}
+
+.last-seen {
+  @extend .caption2;
+}
+
+.title {
+  @extend .subtitle1;
+}
+
+.message {
+  @extend .body1;
+
+  padding: 22px 25px 19px 24px;
+  max-height: 36px;
+  overflow: hidden;
+
+  background: #fcfcfc;
+  border: 1px solid var(--border);
+}
+
+.fullname {
+}
+
+.messages {
+  gap: $local-gap;
+
+  @include flex-column;
+}
+
+.other-messages {
+  margin-left: 12px;
+
+  gap: $local-gap;
+
+  border-left: 4px solid var(--border);
+
+  padding-left: 11px;
+
+  @include flex-column;
+}

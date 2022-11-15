@@ -1,0 +1,42 @@
+@import "../../styles/typography.scss";
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+.profile {
+  gap: 18px;
+
+  padding-right: 17px;
+
+  @include flex-align-center;
+
+  &__avatar {
+    position: relative;
+
+    width: 72px;
+    height: 72px;
+  }
+
+  &__info {
+    gap: 9px;
+
+    @include flex-column;
+  }
+}
+
+.fullname {
+  @extend .subtitle2;
+
+  @include gradient-text($primary-text-gradient);
+}
+
+.position {
+  @extend .caption1;
+}
+
+.dots {
+  fill: #bfbfbf;
+
+  &:hover {
+    fill: #000;
+  }
+}

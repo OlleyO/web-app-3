@@ -1,0 +1,73 @@
+@import "../../styles/typography.scss";
+@import "../../styles/mixins.scss";
+
+.graphCard {
+  padding: 32px;
+
+  gap: 36px;
+
+  @include card-basic;
+
+  &__title {
+    @extend .subtitle1;
+  }
+
+  &__top {
+    justify-content: space-between;
+
+    @include flex-align-center;
+  }
+
+  &__control {
+    gap: 2px;
+
+    @include flex-align-center;
+
+    .options-button {
+      margin-left: 3px;
+
+      margin-bottom: -2px;
+
+      svg {
+        fill: #bfbfbf;
+      }
+
+      &:hover {
+        svg {
+          fill: black;
+        }
+      }
+    }
+
+    &__button {
+      appearance: none;
+
+      cursor: pointer;
+
+      text-transform: capitalize;
+
+      background: none;
+
+      border-radius: 16px;
+
+      padding: 8px 18px;
+
+      border: none;
+
+      transition: color 0.3s;
+
+      @extend .body1;
+
+      font-weight: 700;
+
+      &_active {
+        background: var(--primary-gradient-horizontal);
+        color: #fff;
+      }
+    }
+  }
+
+  &__graph {
+    flex: 1;
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "stats": [
+    { "title": "Daily Visitors", "value": 1500000, "rise": 1020, "fall": 1020 },
+    {
+      "title": "Daily Customers",
+      "value": 1200000,
+      "rise": 1020,
+      "fall": 1020
+    },
+    { "title": "Daily Orders", "value": 900000, "rise": 1020, "fall": 1020 },
+    { "title": "Daily Sales", "value": 850000, "rise": 1020, "fall": 1020 },
+    { "title": "Daily Shipments", "value": 750000, "rise": 1020, "fall": 1020 },
+    { "title": "Daily Revenue", "value": 9850000, "rise": 1020, "fall": 1020 },
+    { "title": "Daily Reviews", "value": 600000, "rise": 1020, "fall": 1020 }
+  ],
+  "graphDataForMonth": [
+    { "name": "Jan", "value": 325854, "value1": 114096, "value2": 321590 },
+    { "name": "Feb", "value": 134612, "value1": 224277, "value2": 161516 },
+    { "name": "Mar", "value": 148999, "value1": 278295, "value2": 165668 },
+    { "name": "Apr", "value": 186153, "value1": 287351, "value2": 307316 },
+    { "name": "May", "value": 119134, "value1": 359304, "value2": 123693 },
+    { "name": "Jun", "value": 232889, "value1": 124828, "value2": 313043 },
+    { "name": "Jul", "value": 138675, "value1": 258084, "value2": 155770 },
+    { "name": "Aug", "value": 251807, "value1": 157923, "value2": 119897 },
+    { "name": "Sep", "value": 182358, "value1": 262683, "value2": 299503 },
+    { "name": "Oct", "value": 339284, "value1": 241322, "value2": 261792 },
+    { "name": "Nov", "value": 132783, "value1": 328843, "value2": 173283 },
+    { "name": "Dec", "value": 168233, "value1": 109931, "value2": 191693 }
+  ],
+  "graphDataForDay": [
+    { "name": "Sun", "value": 367894, "value1": 166387, "value2": 357819 },
+    { "name": "Mon", "value": 122084, "value1": 339849, "value2": 180447 },
+    { "name": "Tue", "value": 157209, "value1": 255680, "value2": 317662 },
+    { "name": "Wed", "value": 167863, "value1": 249167, "value2": 282731 },
+    { "name": "Thu", "value": 306840, "value1": 206814, "value2": 384957 },
+    { "name": "Fri", "value": 217322, "value1": 386558, "value2": 140119 },
+    { "name": "Sat", "value": 257399, "value1": 377971, "value2": 114285 }
+  ],
+  "graphDataForYear": [
+    { "name": "2018", "value": 381028, "value1": 382646, "value2": 373626 },
+    { "name": "2019", "value": 377878, "value1": 220951, "value2": 327008 },
+    { "name": "2020", "value": 314766, "value1": 282728, "value2": 206255 },
+    { "name": "2021", "value": 382387, "value1": 352664, "value2": 233072 },
+    { "name": "2022", "value": 350999, "value1": 103990, "value2": 154118 }
+  ],
+  "revenue": { "revenue": 95, "rise": 1020, "fall": 1020 },
+  "feedInitial": [
+    {
+      "fullname": "Sophie Turner",
+      "photo": "",
+      "messages": [
+        "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type",
+        "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type",
+        "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type"
+      ],
+      "lastSeen": "10 Min Ago"
+    },
+    {
+      "fullname": "Peter Quill",
+      "photo": "",
+      "messages": [
+        "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type"
+      ],
+      "lastSeen": "15 Min Ago"
+    }
+  ],
+  "tasks": [
+    {
+      "title": "Arrange",
+      "description": "simply dummy text of the printing and blah blah blah",
+      "time": "Wed Jul 06 2022 00:24:00 GMT+0300 (Eastern European Summer Time)"
+    },
+    {
+      "title": "Shipment",
+      "description": "simply dummy text of the printing and blah blah blah",
+      "time": "Wed Jul 06 2022 01:10:00 GMT+0300 (Eastern European Summer Time)"
+    },
+    {
+      "title": "Make List",
+      "description": "simply dummy text of the printing and blah blah blah",
+      "time": "Wed Jul 06 2022 01:24:00 GMT+0300 (Eastern European Summer Time)"
+    },
+    {
+      "title": "Review",
+      "description": "simply dummy text of the printing and blah blah blah",
+      "time": "Wed Jul 06 2022 01:30:00 GMT+0300 (Eastern European Summer Time)"
+    }
+  ],
+  "progressData": {
+    "progresses": [50, 60, 45, 48, 50, 45, 65, 85],
+    "total": 1500000,
+    "rise": 1020,
+    "fall": 1020
+  },
+  "shipmentsData": { "total": 15000, "rise": 1020, "fall": 1020 },
+  "contactsData": {
+    "contacts": [
+      {
+        "fullname": "Jennifer Lawrence",
+        "position": "Cheif Authority",
+        "avatar": ""
+      },
+      { "fullname": "Brad Pitt", "position": "Cheif Authority", "avatar": "" },
+      {
+        "fullname": "Leonardo DiCaprio",
+        "position": "Cheif Authority",
+        "avatar": ""
+      },
+      {
+        "fullname": "Jesse Eisenberg",
+        "position": "Cheif Authority",
+        "avatar": ""
+      },
+      {
+        "fullname": "Kristen Stewart",
+        "position": "Cheif Authority",
+        "avatar": ""
+      },
+      { "fullname": "Ben Affleck", "position": "Cheif Authority", "avatar": "" }
+    ]
+  }
+}

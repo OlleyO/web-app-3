@@ -1,0 +1,35 @@
+@import "../../styles/typography.scss";
+@import "../../styles/mixins.scss";
+
+.contacts-tab {
+  padding: 24px 22px;
+
+  background: var(--card-bg);
+
+  @include flex-column;
+}
+
+.contact {
+  padding: 17px 0;
+
+  justify-content: space-between;
+
+  @include flex-align-center;
+}
+
+.info {
+  flex: 1;
+  margin-left: 17px;
+
+  gap: 10px;
+
+  @include flex-column;
+}
+
+.fullname {
+  @extend .subtitle2;
+}
+
+.position {
+  @extend .caption1;
+}

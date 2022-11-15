@@ -1,0 +1,48 @@
+@import "../../styles/typography.scss";
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+.progress-card {
+  align-items: center;
+
+  padding-top: 32px;
+  padding-bottom: 24px;
+
+  @include card-basic;
+
+  &__title {
+    margin-bottom: 28px;
+    @extend .subtitle1;
+  }
+}
+
+.progress-body {
+  display: flex;
+  flex: 1;
+  position: relative;
+  align-items: stretch;
+  gap: 10px;
+  margin-bottom: 22px;
+}
+.progress-body__item {
+  position: relative;
+  background: #f1f1f1;
+  width: 13px;
+  border-radius: 16px;
+  flex: 1;
+
+  .progress {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-radius: inherit;
+    background: var(--secondary-gradient-vertical);
+  }
+}
+
+.total {
+  margin-bottom: 11px;
+  font-size: 20px;
+  @include gradient-text($secondary-text-gradient);
+}

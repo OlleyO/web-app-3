@@ -1,0 +1,95 @@
+@import "../../styles/typography.scss";
+@import "../../styles/mixins.scss";
+
+$local-border: 1px solid #e1e1e1;
+
+.cards {
+  padding: 25px 32px;
+
+  @include card-basic;
+}
+
+.card-title {
+  @extend .subtitle1;
+
+  margin-bottom: 19px;
+}
+
+.card {
+  @include flex-align-center;
+  padding: 10px 0;
+  border-top: $local-border;
+
+  justify-content: space-between;
+
+  padding-left: 5px;
+
+  &:last-child {
+    border-bottom: $local-border;
+  }
+
+  &:nth-child(2n + 1) {
+    background: #fcfcfc;
+  }
+}
+
+.radio {
+  @include flex-align-center;
+
+  gap: 10px;
+
+  flex: 0.35;
+
+  input {
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+
+  .icon {
+    width: 19px;
+    height: 19px;
+    border-radius: 50%;
+    border: $local-border;
+
+    @include flex-align-center;
+    justify-content: center;
+  }
+
+  input:checked + .icon {
+    background: var(--primary-gradient-horizontal);
+  }
+}
+
+.time {
+  @include flex-align-center;
+
+  gap: 9px;
+
+  flex: 0.25;
+}
+
+.title {
+  @extend .subtitle3;
+  color: var(--red);
+}
+
+.description {
+  @extend .body1;
+
+  max-width: 37ch;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.desc-con {
+  flex: 1;
+}
+
+.time-value {
+  font-size: 12px;
+  font-weight: 700;
+  color: #9c9c9c;
+}

@@ -1,0 +1,31 @@
+@import "../../styles/typography.scss";
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+.shipments-card {
+  align-items: center;
+
+  padding: 0 25px;
+  padding-top: 32px;
+  padding-bottom: 25px;
+
+  @include card-basic;
+
+  &__title {
+    margin-bottom: 24px;
+    @extend .subtitle1;
+  }
+
+  &__bottom {
+    align-self: stretch;
+    justify-content: space-between;
+
+    margin-top: 19px;
+    @include flex-align-center;
+  }
+}
+
+.total {
+  font-size: 20px;
+  @include gradient-text($primary-text-gradient);
+}

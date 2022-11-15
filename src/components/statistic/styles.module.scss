@@ -1,0 +1,19 @@
+@import "../../styles/typography";
+@import "../../styles/variables";
+@import "../../styles/mixins.scss";
+
+.stat {
+  gap: 8px;
+
+  @include flex-column;
+}
+
+.title {
+  @extend .subtitle2;
+}
+
+.value {
+  font-size: 20px;
+  font-weight: 700;
+  @include gradient-text($primary-text-gradient);
+}

@@ -1,0 +1,175 @@
+@import "../../../styles/typography.scss";
+@import "../../../styles/mixins.scss";
+
+.main-content {
+  display: grid;
+  padding: 17px 18px 21px 13px;
+
+  flex: 1;
+
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 268px 247px 247px;
+
+  gap: 17px;
+}
+
+.main-wrapper {
+  display: flex;
+}
+
+.graph-card-wrapper {
+  grid-row: 1 / 2;
+  grid-column: 1 / 4;
+}
+
+.revenue-card-wrapper {
+  grid-row: 1 / 2;
+}
+
+.feed-card-wrapper {
+  grid-row: 2 / 4;
+  grid-column: 1 / 3;
+}
+
+.tasks-card-wrapper {
+  grid-row: 2 / 3;
+  grid-column: 3 / 5;
+}
+
+.progress-card-wrapper {
+  grid-row: 3 / 4;
+  grid-column: 3 / 4;
+}
+
+.left {
+  @include flex-column;
+  justify-content: flex-start;
+  max-width: 273px;
+}
+
+.tab-panel-wrapper {
+  flex: 1;
+}
+
+.tab {
+  flex: 1;
+}
+
+.control {
+  flex: 0.1;
+}
+
+.companies {
+  flex: 1;
+  padding: 28px 40px;
+
+  @include flex-column;
+  align-items: center;
+  background: var(--card-bg);
+
+  justify-content: space-between;
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 11px;
+  }
+}
+
+.title {
+  @extend .subtitle1;
+}
+
+.logo {
+  width: 57px;
+  height: 57px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px;
+
+  &-rdio {
+    background: linear-gradient(
+      125deg,
+      #b878e2,
+      #ad74dc,
+      #a271d6,
+      #976dd0,
+      #8c69c9,
+      #8266c3,
+      #7762bc,
+      #6d5eb5
+    );
+  }
+
+  &-css3 {
+    background: linear-gradient(
+      125deg,
+      #58e6c7,
+      #53e0c8,
+      #4fdbc9,
+      #4cd5ca,
+      #4ccfc9,
+      #4ccac9,
+      #4ec4c7,
+      #51bec5
+    );
+  }
+
+  &-deviantart {
+    background: linear-gradient(
+      125deg,
+      #f2b496,
+      #ebab93,
+      #e3a18f,
+      #db998c,
+      #d29089,
+      #c98886,
+      #c08083,
+      #b67880
+    );
+  }
+
+  &-xing {
+    background: linear-gradient(
+      125deg,
+      #8ea0e8,
+      #8d97e3,
+      #8c8ddd,
+      #8c83d7,
+      #8d79d1,
+      #8f6fc9,
+      #9064c1,
+      #9259b8
+    );
+  }
+
+  &-vimeo {
+    background: linear-gradient(
+      125deg,
+      #69dae4,
+      #5dd4e9,
+      #55cded,
+      #52c6f0,
+      #56bef1,
+      #5fb5f1,
+      #6cacef,
+      #7aa3eb
+    );
+  }
+
+  &-vk-social-network {
+    background: linear-gradient(
+      125deg,
+      #fbd78c,
+      #fecf8b,
+      #ffc88c,
+      #ffc08d,
+      #ffb98f,
+      #feb392,
+      #fbad95,
+      #f7a798
+    );
+  }
+}

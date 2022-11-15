@@ -1,0 +1,13 @@
+.icon-button {
+  appearance: none;
+  border: none;
+  background: none;
+
+  &:hover {
+    cursor: pointer;
+
+    svg {
+      fill: black;
+    }
+  }
+}
